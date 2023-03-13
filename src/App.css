@@ -2,23 +2,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-margin: 10px 10px 10px 10px;
-list-style: none;
+  margin: 10px 10px 10px 10px;
+  list-style: none;
 }
 
 .missionsIndex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-margin: 10px 10px 10px 10px;
-list-style: none;
+  margin: 10px 10px 10px 10px;
+  list-style: none;
 }
 
 .navContainer {
   display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin: 10px 10px 10px 10px;
-list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
+  list-style: none;
 }
-
