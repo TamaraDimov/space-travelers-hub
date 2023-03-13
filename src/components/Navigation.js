@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -14,7 +13,7 @@ export default function Navbar() {
               <h1>Space Travelers Hub</h1>
             </li>
             <li>
-              <Link className="/rockets" to="/">Rockets</Link>
+              <Link className="/navRockets" to="/rockets">Rockets</Link>
             </li>
             <li>
               <Link className="navMissions" to="/missions">Missions</Link>
