@@ -1,5 +1,3 @@
-/*eslint-disable*/
-
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../components/Navigation';
 import MyProfile from '../components/Profile/MyProfile';

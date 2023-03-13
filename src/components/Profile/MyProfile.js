@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-
 const MyProfile = () => {
   <ul>
     <li>
