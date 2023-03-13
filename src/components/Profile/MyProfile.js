@@ -1,14 +1,12 @@
-/*eslint-disable*/
-
-import react from 'react';
+import { Link } from 'react-router-dom';
 
 const MyProfile = () => {
   <ul>
-    <li link="#" className="missions">
-      My Missions
+    <li>
+      <Link className="/rockets" to="/">Rockets</Link>
     </li>
-    <li link="#" className="rockets">
-      My Rockets
+    <li>
+      <Link className="navMissions" to="/missions">Missions</Link>
     </li>
   </ul>;
 };
