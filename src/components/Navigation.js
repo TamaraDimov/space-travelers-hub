@@ -14,7 +14,7 @@ export default function Navbar() {
               <h1>Space Travelers Hub</h1>
             </li>
             <li>
-              <Link className="navBooks" to="/">Rockets</Link>
+              <Link className="/rockets" to="/">Rockets</Link>
             </li>
             <li>
               <Link className="navMissions" to="/missions">Missions</Link>

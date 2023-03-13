@@ -5,16 +5,16 @@ export default function Mission({ mission, description, status }) {
   return (
     <>
       <section className="missions">
-        <div className="missonsHeads">
-          <ul>
+        <div>
+          <ul className="missonsHeads">
             <li>Mission</li>
             <li>Description</li>
             <li>Status</li>
             <li />
           </ul>
         </div>
-        <div className="missionsIndex">
-          <ul>
+        <div>
+          <ul className="missionsIndex">
             <li><h2>{mission}</h2></li>
             <li>
               <p>
