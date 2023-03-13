@@ -1,10 +1,10 @@
+/*eslint-disable*/
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <>
       <div className="app">
-
         <nav>
           <ul className="navContainer">
             <li>
@@ -14,14 +14,20 @@ export default function Navbar() {
               <h1>Space Traveler's Hub</h1>
             </li>
             <li>
-              <Link className="navBooks" to="/">Rockets</Link>
+              <Link className="navRockets" to="/">
+                Rockets
+              </Link>
             </li>
             <li>
-              <Link className="navCategories" to="/categories">Missions</Link>
+              <Link className="navMissions" to="/Missions">
+                Missions
+              </Link>
             </li>
             <li className="navBorderLine" />
             <li>
-              <Link className="navCategories" to="/categories">My Profile</Link>
+              <Link className="navMyProfile" to="/MyProfile">
+                My Profile
+              </Link>
             </li>
           </ul>
         </nav>
