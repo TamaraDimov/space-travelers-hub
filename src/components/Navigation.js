@@ -13,20 +13,15 @@ export default function Navbar() {
               <h1>Space Travelers Hub</h1>
             </li>
             <li>
-              <Link className="navRockets" to="/">
-                Rockets
-              </Link>
+              <Link className="/navRockets" to="/rockets">Rockets</Link>
             </li>
             <li>
-              {/* <Link className="navMissions" to="/Missions">
-                Missions
-              </Link> */}
+              <Link className="navMissions" to="/missions">Missions</Link>
             </li>
             <li className="navBorderLine" />
             <li>
-              <Link className="navMyProfile" to="/MyProfile">
-                My Profile
-              </Link>
+              <Link className="navMyProfile" to="/myProfile">My Profile</Link>
+
             </li>
           </ul>
         </nav>

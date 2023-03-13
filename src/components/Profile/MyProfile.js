@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 const MyProfile = () => {
   <ul>
     <li>
-      <Link className="/rockets" to="/">
-        Rockets
-      </Link>
+      <h2 className="/navRockets" to="/rocket">Rockets</h2>
     </li>
     <li>
-      <Link className="navRocket" to="/rocket">
-        Rocket
-      </Link>
+      <h2 className="navMissions" to="/missions">Missions</h2>
     </li>
   </ul>;
 };
