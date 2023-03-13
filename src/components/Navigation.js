@@ -11,17 +11,17 @@ export default function Navbar() {
               <image src="src\aspects\space.png" className="image" />
             </li>
             <li className="navHeader">
-              <h1>Space Traveler's Hub</h1>
+              <h1>Space Travelers Hub</h1>
             </li>
             <li>
               <Link className="navBooks" to="/">Rockets</Link>
             </li>
             <li>
-              <Link className="navCategories" to="/categories">Missions</Link>
+              <Link className="navMissions" to="/missions">Missions</Link>
             </li>
             <li className="navBorderLine" />
             <li>
-              <Link className="navCategories" to="/categories">My Profile</Link>
+              <Link className="navMyProfile" to="/myProfile">My Profile</Link>
             </li>
           </ul>
         </nav>
