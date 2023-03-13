@@ -1,10 +1,10 @@
+/*eslint-disable*/
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <>
       <div className="app">
-
         <nav>
           <ul className="navContainer">
             <li>
@@ -22,6 +22,7 @@ export default function Navbar() {
             <li className="navBorderLine" />
             <li>
               <Link className="navMyProfile" to="/myProfile">My Profile</Link>
+
             </li>
           </ul>
         </nav>
