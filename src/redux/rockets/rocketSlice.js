@@ -12,7 +12,6 @@ export const fetchRockets = createAsyncThunk(
     return response.json();
   },
 );
-
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
