@@ -4,7 +4,7 @@ import Rockets from './page/Rocket';
 import Missions from './page/Missions';
 import Navbar from './components/Navigation';
 import MyProfile from './page/MyProfile';
-import { fetchRockets } from './redux/rocketSlice';
+import { fetchRockets } from './redux/rockets/rocketSlice';
 import store from './redux/store';
 
 const App = () => {

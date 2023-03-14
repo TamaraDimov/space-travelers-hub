@@ -5,7 +5,7 @@ const initialState = {
   rockets: [],
   toFetch: 'true',
 };
-
+console.log(rockets);
 export const fetchRockets = createAsyncThunk(
   'rockets/fetchRockets',
   async () => {
