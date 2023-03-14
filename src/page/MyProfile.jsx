@@ -4,16 +4,15 @@ import MyProfile from '../components/Profile/MyProfile';
 import Rockets from '../components/Rocket/Rockets';
 import Missions from './Missions';
 
-
 export default function MyProfilePage() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route exact path="/" element={<MyProfile />} />
-        <Route exact path="/Mission" element={<Mission />} />
+        <Route exact path="/Mission" element={<Missions />} />
         <Route exact path="/Rockets" element={<Rockets />} />
-       </Routes>
+      </Routes>
     </>
   );
 }
