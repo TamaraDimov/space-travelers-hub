@@ -9,10 +9,9 @@ export default function Navbar() {
             <li>
               <img
                 className="space"
-                src="./aspects/space.png"
+                src="./aspects/Space.png"
                 alt="space logo"
               />
-              Space Traveler&apos;s Hub
             </li>
             <li className="navHeader">
               <h1>Space Traveler&apos;s Hub</h1>
