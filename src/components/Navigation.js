@@ -7,21 +7,31 @@ export default function Navbar() {
         <nav>
           <ul className="navContainer">
             <li>
-              <image src="src\aspects\space.png" className="image" />
+              <img
+                className="space"
+                src="./aspects/space.png"
+                alt="space logo"
+              />
+              Space Traveler&apos;s Hub
             </li>
             <li className="navHeader">
-              <h1>Space Travelers Hub</h1>
+              <h1>Space Traveler&apos;s Hub</h1>
             </li>
             <li>
-              <Link className="/navRockets" to="/rockets">Rockets</Link>
+              <Link className="/navRockets" to="/rockets">
+                Rockets
+              </Link>
             </li>
             <li>
-              <Link className="navMissions" to="/missions">Missions</Link>
+              <Link className="navMissions" to="/missions">
+                Missions
+              </Link>
             </li>
             <li className="navBorderLine" />
             <li>
-              <Link className="navMyProfile" to="/myProfile">My Profile</Link>
-
+              <Link className="navMyProfile" to="/myProfile">
+                My Profile
+              </Link>
             </li>
           </ul>
         </nav>
