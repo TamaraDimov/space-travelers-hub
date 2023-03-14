@@ -13,12 +13,11 @@ export const getMissons = createAsyncThunk('missions/getMissons', async () => {
 });
 
 const initialState = {
-  missonList: [],
+  missionList: [],
   status: 'idle',
   error: null,
   newStatus: '',
 };
-
 export const missionsSlice = createSlice({
   name: 'missions',
   initialState,
@@ -34,7 +33,7 @@ export const missionsSlice = createSlice({
         keys.forEach((key) => {
           newArray.push(Object.assign({ id: key }, ...payload[key]));
         });
-        state.getMissons = [...newArray];
+        state.missionList = [...newArray];
         state.status = 'loaded';
       })
       .addCase(getMissons.rejected, (state, action) => ({

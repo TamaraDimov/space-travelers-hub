@@ -6,9 +6,11 @@ import Navbar from './components/Navigation';
 import MyProfile from './page/MyProfile';
 import { fetchRockets } from './redux/rockets/rocketSlice';
 import store from './redux/store';
+import { getMissons } from './redux/missions/missionSlice';
 
 const App = () => {
   store.dispatch(fetchRockets());
+  store.dispatch(getMissons());
   return (
     <>
       <Navbar />
