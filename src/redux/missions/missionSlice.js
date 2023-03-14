@@ -16,7 +16,6 @@ const initialState = {
   missionList: [],
   status: 'idle',
   error: null,
-  newStatus: '',
 };
 export const missionsSlice = createSlice({
   name: 'missions',
@@ -27,14 +26,19 @@ export const missionsSlice = createSlice({
         ...state,
         status: 'loading',
       }))
-      .addCase(getMissons.fulfilled, (state, { payload }) => {
-        const keys = Object.keys(payload);
+      .addCase(getMissons.fulfilled, (state, action) => {
+        const newState = { ...state };
         const newArray = [];
-        keys.forEach((key) => {
-          newArray.push(Object.assign({ id: key }, ...payload[key]));
+        action.payload.forEach((key) => {
+          newArray.push({
+            id: key.mission_id,
+            name: key.mission_name,
+            description: key.description,
+          });
         });
-        state.missionList = [...newArray];
-        state.status = 'loaded';
+        newState.missionList = [...newArray];
+        newState.status = 'loaded';
+        return newState;
       })
       .addCase(getMissons.rejected, (state, action) => ({
         ...state,
