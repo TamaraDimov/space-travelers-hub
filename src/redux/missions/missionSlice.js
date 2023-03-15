@@ -68,5 +68,6 @@ export const missionsSlice = createSlice({
   },
 });
 
+export const allMissions = (state) => state.missionList.missionList;
 export const { joinMission, leaveMission } = missionsSlice.actions;
 export default missionsSlice.reducer;

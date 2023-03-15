@@ -1,16 +1,18 @@
-import { Routes, Route } from 'react-router-dom';
-import MyProfile from '../components/Profile/MyProfile';
-import Rockets from '../components/Rocket/Rockets';
-import Missions from './Missions';
-
 export default function MyProfilePage() {
   return (
     <>
-      <Routes>
-        <Route exact path="/" element={<MyProfile />} />
-        <Route exact path="/Mission" element={<Missions />} />
-        <Route exact path="/Rockets" element={<Rockets />} />
-      </Routes>
+      <ul>
+        <li>
+          <h2 className="/navRockets" to="/rocket">
+            Rockets
+          </h2>
+        </li>
+        <li>
+          <h2 className="navMissions" to="/missions">
+            Missions
+          </h2>
+        </li>
+      </ul>
     </>
   );
 }
