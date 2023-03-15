@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import { useDispatch, useSelector } from 'react-redux';
 
 const initialState = {
-  rockets: [],
+  rocketList: [],
   toFetch: 'true',
 };
+
 export const fetchRockets = createAsyncThunk(
   'rockets/fetchRockets',
   async () => {
@@ -12,6 +12,7 @@ export const fetchRockets = createAsyncThunk(
     return response.json();
   },
 );
+
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
@@ -28,7 +29,7 @@ const rocketsSlice = createSlice({
           image: rockCard.flickr_images,
         });
       });
-      newState.rockets = rocketsCard;
+      newState.rocketList = rocketsCard;
       newState.toFetch = false;
       return newState;
     });
