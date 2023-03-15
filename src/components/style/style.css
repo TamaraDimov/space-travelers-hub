@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .navContainer {
   border-bottom: solid 1.5px #d3d3d3;
 }
@@ -30,6 +31,7 @@
   align-items: center;
   padding: 2rem;
 }
+
 .options {
   width: 70%;
   margin: 5% auto;
