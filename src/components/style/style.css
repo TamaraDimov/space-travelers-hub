@@ -29,7 +29,7 @@
 .card {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .options {
@@ -39,6 +39,7 @@
 
 .description {
   line-height: 1.5;
+  margin-top: 0;
 }
 
 .reserved {
@@ -60,7 +61,9 @@
   height: auto;
   margin: 5px 20px;
 }
-
+.name {
+  margin-top: 0;
+}
 .image {
   width: 250px;
   height: auto;

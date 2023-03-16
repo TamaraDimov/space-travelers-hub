@@ -4,11 +4,11 @@ import ProfileRockets from '../components/Rocket/ProfileRockets';
 export default function MyProfilePage() {
   return (
     <>
-      <ul>
-        <li>
+      <ul className="myProfileUl">
+        <li className="myProfileLi">
           <ProfileMissions />
         </li>
-        <li>
+        <li className="myProfileLi">
           <ProfileRockets />
         </li>
       </ul>

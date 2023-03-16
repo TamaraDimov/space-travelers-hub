@@ -9,7 +9,8 @@ export default function ProfileRockets() {
       <>
         <div>
           <div>
-            <p>No booked rockets</p>
+            <h2 className="reservationTableTitle"> My Rockets</h2>
+            <p className="reservationTable">No booked rockets</p>
           </div>
         </div>
       </>
@@ -18,12 +19,12 @@ export default function ProfileRockets() {
   return (
     <>
       <div>
-        <h2> My Rockets</h2>
+        <h2 className="reservationTableTitle"> My Rockets</h2>
       </div>
       <div>
         {joinedRockets.map((rocket) => (
           <div key={rocket.id}>
-            <p>{rocket.name}</p>
+            <p className="reservationTable">{rocket.name}</p>
           </div>
         ))}
       </div>
