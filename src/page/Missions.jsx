@@ -26,8 +26,7 @@ export default function Missions() {
         </ul>
       </div>
       <div>
-        { missionList.map((mission) => (
-
+        {missionList.map((mission) => (
           <Mission
             key={mission.id}
             id={mission.id}
