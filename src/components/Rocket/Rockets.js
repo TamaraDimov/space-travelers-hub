@@ -16,8 +16,17 @@ export default function Rockets({
         </div>
         <div className="options">
           <h3 className="name">{name}</h3>
-          <h4 className="badge">{reserved ? 'reserved' : ''}</h4>
-          <p className="description>">{description}</p>
+          <div className="block">
+            <div>
+              <span className="badge">{reserved ? 'reserved' : ''}</span>
+            </div>
+            <div>
+              <p className="description">
+                {/* {reserved ? 'reserved' : ''} */}
+                {description}
+              </p>
+            </div>
+          </div>
           <button
             type="button"
             className={reserved ? 'reserved unbook' : 'reserved book'}
@@ -38,7 +47,6 @@ export default function Rockets({
     </main>
   );
 }
-
 Rockets.defaultProps = {
   id: '',
   name: '',

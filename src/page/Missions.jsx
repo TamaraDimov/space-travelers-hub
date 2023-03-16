@@ -19,9 +19,15 @@ export default function Missions() {
     <>
       <div>
         <ul className="missonsHeads">
-          <li className="missionMission"><h2>Mission</h2></li>
-          <li className="missionDescription"><h2>Description</h2></li>
-          <li className="missionStatus"><h2>Status</h2></li>
+          <li className="missionMission">
+            <h2>Mission</h2>
+          </li>
+          <li className="missionDescription">
+            <h2>Description</h2>
+          </li>
+          <li className="missionStatus">
+            <h2>Status</h2>
+          </li>
           <li />
         </ul>
       </div>

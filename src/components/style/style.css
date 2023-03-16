@@ -34,7 +34,7 @@
 
 .options {
   width: 70%;
-  margin: 5% auto;
+  margin: 30px;
 }
 
 .description {
@@ -66,13 +66,20 @@
   height: auto;
 }
 
-.badge {
-  background-color: rgb(86, 191, 244);
-  border: none;
-  font-size: 0.7rem;
-  border-radius: 2px;
-  color: #fff;
-  width: 100px;
-  text-align: center;
+.block {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
 }
 
+span {
+  display: inline;
+  margin-top: 10px;
+  background-color: rgb(86, 191, 244);
+  border: none;
+  font-size: 1rem;
+  border-radius: 3px;
+  color: #fff;
+  width: 110px;
+  text-align: center;
+}
