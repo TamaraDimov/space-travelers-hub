@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission, leaveMission } from '../redux/missions/missionSlice';
+import { joinMission, leaveMission } from '../../redux/missions/missionSlice';
 
 export default function Mission({
   id, name, description, reserved,
@@ -12,31 +12,32 @@ export default function Mission({
       <section className="missions">
         <div>
           <ul className="missionsIndex">
-            <li><h2>{name}</h2></li>
             <li>
-              <p>
-                {description}
-              </p>
+              <h2>{name}</h2>
+            </li>
+            <li>
+              <p>{description}</p>
             </li>
             <li>
               <h3 className='status ? "active" : "notActive"'>
                 {reserved ? 'Active Member' : 'Not A MEMBER'}
               </h3>
-
             </li>
             <li>
               <button
                 type="button"
-                onClick={reserved ? () => {
-                  dispatch(leaveMission(id));
+                onClick={
+                  reserved
+                    ? () => {
+                      dispatch(leaveMission(id));
+                    }
+                    : () => {
+                      dispatch(joinMission(id));
+                    }
                 }
-                  : () => {
-                    dispatch(joinMission(id));
-                  }}
               >
                 {reserved ? 'Leave Mission' : 'Join Mission'}
               </button>
-
             </li>
           </ul>
         </div>

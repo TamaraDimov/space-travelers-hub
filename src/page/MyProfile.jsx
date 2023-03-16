@@ -1,4 +1,5 @@
-import ProfileMissions from '../components/ProfileMissions';
+import ProfileMissions from '../components/Mission/ProfileMissions';
+import ProfileRockets from '../components/Rocket/ProfileRockets';
 
 export default function MyProfilePage() {
   return (
@@ -8,9 +9,7 @@ export default function MyProfilePage() {
           <ProfileMissions />
         </li>
         <li>
-          <h2 className="navMissions" to="/missions">
-            Rockets
-          </h2>
+          <ProfileRockets />
         </li>
       </ul>
     </>

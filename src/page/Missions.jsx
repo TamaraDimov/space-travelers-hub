@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissons } from '../redux/missions/missionSlice';
-import Mission from '../components/Misson';
+import Mission from '../components/Mission/Misson';
 
 export default function Missions() {
   const { missionList, status } = useSelector((store) => store.missions);
