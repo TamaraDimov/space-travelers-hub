@@ -16,7 +16,7 @@ export default function Rockets({
         </div>
         <div className="options">
           <h3 className="name">{name}</h3>
-          <h4>{reserved ? 'reserved' : ''}</h4>
+          <h4 className="badge">{reserved ? 'reserved' : ''}</h4>
           <p className="description>">{description}</p>
           <button
             type="button"

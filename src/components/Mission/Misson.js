@@ -13,18 +13,19 @@ export default function Mission({
         <div>
           <ul className="missionList">
             <li className="missionListElements">
-              <h2>{name}</h2>
+              <h3>{name}</h3>
             </li>
             <li className="missionListElements">
               <p>{description}</p>
             </li>
             <li className="missionListElements">
-              <h3 className='status ? "active" : "notActive"'>
+              <h4 className={reserved ? 'active' : 'notactive'}>
                 {reserved ? 'Active Member' : 'Not A MEMBER'}
-              </h3>
+              </h4>
             </li>
             <li className="missionListElements">
               <button
+                className={reserved ? 'leave' : 'join'}
                 type="button"
                 onClick={
                   reserved
