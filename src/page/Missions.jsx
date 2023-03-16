@@ -18,12 +18,22 @@ export default function Missions() {
   return (
     <>
       <div>
-        {missionList.map((mission) => (
+        <ul className="missonsHeads">
+          <li>Mission</li>
+          <li>Description</li>
+          <li>Status</li>
+          <li />
+        </ul>
+      </div>
+      <div>
+        { missionList.map((mission) => (
+
           <Mission
             key={mission.id}
             id={mission.id}
             name={mission.name}
             description={mission.description}
+            reserved={mission.reserved}
           />
         ))}
       </div>
