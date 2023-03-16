@@ -21,3 +21,23 @@
   margin: 10px 10px 10px 10px;
   list-style: none;
 }
+
+.missionList {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.missionList:nth-of-type() {
+  background-color: rgb(202, 202, 202);
+}
+
+.missionListElements {
+  text-decoration: none;
+  border-radius: 0.1rem;
+  border-color: solid rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+}
