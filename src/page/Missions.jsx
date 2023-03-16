@@ -27,6 +27,7 @@ export default function Missions() {
       </div>
       <div>
         { missionList.map((mission) => (
+
           <Mission
             key={mission.id}
             id={mission.id}
@@ -35,7 +36,6 @@ export default function Missions() {
             reserved={mission.reserved}
           />
         ))}
-
       </div>
     </>
   );
