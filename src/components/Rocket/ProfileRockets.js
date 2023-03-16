@@ -9,7 +9,7 @@ export default function ProfileRockets() {
       <>
         <div>
           <div>
-            <p>No joined missions</p>
+            <p>No booked rockets</p>
           </div>
         </div>
       </>
