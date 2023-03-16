@@ -16,8 +16,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route index element={<Navigate to="rockets" replace />} />
-        <Route path="/MyProfile/*" element={<MyProfile />} />
-        <Route path="Rockets" element={<Rockets />} />
+        <Route path="/myProfile/*" element={<MyProfile />} />
+        <Route path="/rockets" element={<Rockets />} />
         <Route path="/missions" element={<Missions />} />
         <Route path="*" element={<div>NotFound</div>} />
       </Routes>

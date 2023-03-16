@@ -54,6 +54,7 @@ export const missionsSlice = createSlice({
             id: key.mission_id,
             name: key.mission_name,
             description: key.description,
+            reserved: false,
           });
         });
         newState.missionList = [...newArray];
