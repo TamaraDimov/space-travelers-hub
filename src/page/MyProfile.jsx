@@ -1,11 +1,11 @@
-// import ProfileMissions from '../components/ProfileMissions';
+import ProfileMissions from '../components/ProfileMissions';
 
 export default function MyProfilePage() {
   return (
     <>
       <ul>
         <li>
-          {/* <ProfileMissions /> */}
+          <ProfileMissions />
         </li>
         <li>
           <h2 className="navMissions" to="/missions">

@@ -54,6 +54,7 @@ export const missionsSlice = createSlice({
             id: key.mission_id,
             name: key.mission_name,
             description: key.description,
+            reserved: false,
           });
         });
         newState.missionList = [...newArray];
@@ -68,6 +69,5 @@ export const missionsSlice = createSlice({
   },
 });
 
-export const allMissions = (state) => state.missionList.missionList;
 export const { joinMission, leaveMission } = missionsSlice.actions;
 export default missionsSlice.reducer;
