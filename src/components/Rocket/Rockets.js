@@ -7,8 +7,7 @@ export default function Rockets({ name, description, image }) {
     <main className={style.main}>
       <div className="card">
         <div>
-          <p>ljguk</p>
-          <image src={image} className="image>" alt="rocket" />
+          <img src={image} className="image>" alt="rocket" />
         </div>
         <div className="options">
           <h3 className="name">{name}</h3>

@@ -14,7 +14,6 @@ export default function Rocket() {
       dispatch(fetchRockets());
     }
   }, [status, dispatch]);
-
   return (
     <>
       <div>
@@ -24,7 +23,7 @@ export default function Rocket() {
             id={rocket.id}
             name={rocket.name}
             description={rocket.description}
-            image={rocket.flickr_images}
+            image={rocket.image[0]}
           />
         ))}
       </div>
