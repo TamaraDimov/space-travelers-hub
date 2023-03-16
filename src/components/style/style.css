@@ -29,16 +29,17 @@
 .card {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .options {
   width: 70%;
-  margin: 5% auto;
+  margin: 30px;
 }
 
 .description {
   line-height: 1.5;
+  margin-top: 0;
 }
 
 .reserved {
@@ -61,19 +62,29 @@
   margin: 5px 20px;
 }
 
-.badge {
-  display: inline-block;
-  padding: 0.5em;
-  margin-right: 0.5em;
-  background-color: #6c757d;
-  color: white;
-  font-weight: bold;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  border-radius: 0.3em;
+.name {
+  margin-top: 0;
 }
 
 .image {
   width: 250px;
   height: auto;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+span {
+  display: inline;
+  margin-top: 10px;
+  background-color: rgb(86, 191, 244);
+  border: none;
+  font-size: 1rem;
+  border-radius: 3px;
+  color: #fff;
+  width: 110px;
+  text-align: center;
 }

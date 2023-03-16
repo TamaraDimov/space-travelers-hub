@@ -3,13 +3,17 @@ import { useSelector } from 'react-redux';
 
 export default function ProfileMissions() {
   const { missionList } = useSelector((store) => store.missions);
-  const joinedMission = missionList.filter((mission) => mission.reserved === true);
+  const joinedMission = missionList.filter(
+    (mission) => mission.reserved === true,
+  );
   if (joinedMission.length === 0) {
     return (
       <>
         <div>
           <div>
-            <p>No joined missions</p>
+            <h2 className="reservationTableTitle"> My Missions</h2>
+
+            <p className="reservationTable">No joined missions</p>
           </div>
         </div>
       </>
@@ -18,14 +22,12 @@ export default function ProfileMissions() {
   return (
     <>
       <div>
-        <h2> My Missions</h2>
+        <h2 className="reservationTableTitle"> My Missions</h2>
       </div>
       <div>
         {joinedMission.map((mission) => (
           <div key={mission.id}>
-            <p>
-              {mission.name}
-            </p>
+            <p className="reservationTable">{mission.name}</p>
           </div>
         ))}
       </div>
