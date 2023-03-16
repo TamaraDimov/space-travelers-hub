@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import style from './style/style.css';
+import planet from '../aspects/space.png';
 
 export default function Navbar() {
   return (
@@ -7,7 +8,7 @@ export default function Navbar() {
       <div className={style.app}>
         <nav className="navContainer">
           <div className="title">
-            <img className="space" src="./aspects/Space.png" alt="space logo" />
+            <img src={planet} alt="Space Travel Hub logo" className="logo" />
             <h1 className="navHeader">Space Traveler&apos;s Hub</h1>
           </div>
           <ul className="navLinks">

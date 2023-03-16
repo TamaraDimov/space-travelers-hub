@@ -24,6 +24,7 @@ export default function Rocket() {
             name={rocket.name}
             description={rocket.description}
             image={rocket.image[0]}
+            reserved={rocket.reserved}
           />
         ))}
       </div>
