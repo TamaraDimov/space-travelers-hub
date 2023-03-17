@@ -76,7 +76,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo and project presentation <a name="live-demo"></a>
 
-- [Live Demo Link](https://tamaradimov.github.io/space-travelers-hub/)
+- [Live Demo Link COMMING SOON](https://tamaradimov.github.io/space-travelers-hub/)
 
 <!-- - [Project presentation](https://www.loom.com/share/9ccfe0dd7ad14012b461c2d3f65fcf3d) -->
 
