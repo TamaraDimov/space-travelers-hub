@@ -1,0 +1,63 @@
+.missonsHeads,
+.missionList {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1.2fr;
+  border: solid 1.5px #d3d3d3;
+  list-style: none;
+  align-content: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.missonsHeads {
+  margin-top: 30px;
+}
+
+.missonsHeads li,
+.missionList li {
+  padding: 5px;
+  border-right: solid 2px #d3d3d3;
+}
+
+.active {
+  background-color: rgb(26, 98, 150);
+  color: white;
+  margin: 113px 10px 0 10px;
+  text-align: center;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
+.notactive {
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+  margin: 113px 10px 0 10px;
+  padding: 2px 3px;
+  text-align: center;
+}
+
+.leave {
+  margin: 113px 10px 0 10px;
+  color: red;
+  background-color: white;
+  border-color: red;
+  border-radius: 3px;
+}
+
+.join {
+  margin: 113px 10px 0 10px;
+}
+
+.myProfileUl {
+  display: flex;
+  list-style: none;
+}
+
+.reservationTable {
+  list-style: none;
+  margin: 0 3rem -2px 0;
+  width: 500px;
+  height: 50px;
+  border: solid 2px #d3d3d3;
+}
