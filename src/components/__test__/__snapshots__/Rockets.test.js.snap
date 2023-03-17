@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets component should render correctly 1`] = `
+<main>
+  <div
+    className="card"
+  >
+    <div>
+      <img
+        alt="rocket"
+        className="image"
+        src="https://spacex.com/falcon-1.png"
+      />
+    </div>
+    <div
+      className="options"
+    >
+      <h3
+        className="name"
+      >
+        Falcon 1
+      </h3>
+      <div
+        className="block"
+      >
+        <div>
+          <span
+            className="badge"
+          />
+        </div>
+        <div>
+          <p
+            className="description"
+          >
+            The Falcon 1 was a small rocket designed for small payloads and low Earth orbits.
+          </p>
+        </div>
+      </div>
+      <button
+        className="reserved book"
+        onClick={[Function]}
+        type="button"
+      >
+        Book Rocket
+      </button>
+    </div>
+  </div>
+</main>
+`;
