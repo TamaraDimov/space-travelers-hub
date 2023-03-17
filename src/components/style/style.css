@@ -19,6 +19,10 @@
   gap: 2rem;
 }
 
+.navContainer a {
+  text-decoration: none;
+}
+
 .navBorderLine {
   width: 0.2rem;
   height: 1.5rem;

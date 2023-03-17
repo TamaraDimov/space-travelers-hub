@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import style from './style/style.css';
 import planet from '../aspects/space.png';
 
@@ -13,20 +13,20 @@ export default function Navbar() {
           </div>
           <ul className="navLinks">
             <li>
-              <Link className="/navRockets" to="/rockets">
+              <NavLink className="/navRockets" to="/rockets">
                 Rockets
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navMissions" to="/missions">
+              <NavLink className="navMissions" to="/missions">
                 Missions
-              </Link>
+              </NavLink>
             </li>
             <li className="navBorderLine" />
             <li>
-              <Link className="navMyProfile" to="/myProfile">
+              <NavLink className="navMyProfile" to="/myProfile">
                 My Profile
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
